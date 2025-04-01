@@ -3,7 +3,7 @@ input.onButtonPressed(Button.A, function () {
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Forward, 50)
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorRight, Kitronik_Move_Motor.MotorDirection.Forward, 50)
     basic.pause(200)
-    if (0 <= 0) {
+    if (Kitronik_Move_Motor.measure() <= 2) {
     	
     } else {
     	
